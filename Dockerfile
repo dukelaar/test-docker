@@ -1,4 +1,4 @@
-FROM registry.redhat.io/devtools/go-toolset-rhel7
+FROM golang:1.16
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
