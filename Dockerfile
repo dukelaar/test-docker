@@ -9,7 +9,9 @@ WORKDIR /opt/apt-root/src
 # RUN npm ci --only=production
 # RUN npm install
 COPY . .
+RUN ls
 # Bundle app source
 
+
+CMD [ "go","run","main.go" ]
 EXPOSE 8080
-CMD [ "sleep", "3000" ]
