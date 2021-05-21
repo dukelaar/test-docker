@@ -8,7 +8,7 @@ FROM quay.io/toni0/hello-webserver-golang
 # RUN npm ci --only=production
 # RUN npm install
 COPY . .
-RUN LS
+RUN ls
 # Bundle app source
 
 EXPOSE 8080
