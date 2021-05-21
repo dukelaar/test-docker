@@ -10,5 +10,5 @@ FROM quay.io/toni0/hello-webserver-golang
 COPY . .
 RUN ls
 # Bundle app source
-
+CMD [ "sleep", "3000" ]
 EXPOSE 8080
