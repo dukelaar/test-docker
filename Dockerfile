@@ -8,7 +8,7 @@ FROM quay.io/bitnami/golang
 # RUN npm install
 
 COPY . .
-RUN ls /var/lib/kubelet/config.json
+RUN cat /etc/containers/mounts.conf
 
 # Bundle app source
 CMD [ "sleep", "3000" ]
