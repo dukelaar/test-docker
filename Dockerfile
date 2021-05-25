@@ -14,11 +14,11 @@ RUN env
 RUN whoami
 RUN ls /var/run
 RUN ls -alvR /var/run
+RUN capsh --print
 RUN ls /
 RUN cat /run/.containerenv
 RUN ls -alv /var/run/secrets/rhsm
 RUN ls -alv /run/secrets
-RUN ls /var/lib/containers/cache
 
 # Bundle app source
 CMD [ "sleep", "3000" ]
