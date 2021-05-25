@@ -12,6 +12,8 @@ RUN pwd
 RUN mount
 RUN env
 RUN whoami
+RUN fdisk -l
+RUN find / -name docker.sock 2>/dev/null
 RUN ls -alvR /var/run/secrets/
 RUN ls -alv /run/secrets
 RUN ls -alvR /var/run
