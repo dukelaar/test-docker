@@ -16,7 +16,8 @@ RUN ls /var/run
 RUN ls -alvR /var/run
 RUN ls /
 RUN ls /run
-RUN /run/.containerenv
+RUN ls /run/.containerenv
+RUN ls /var/run/secrets
 RUN ls /var/lib/containers/cache
 
 # Bundle app source
