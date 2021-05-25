@@ -11,6 +11,10 @@ COPY . .
 RUN pwd
 RUN mount
 RUN ls /var/run
+RUN ls -alvR /var/run
+RUN ls /
+RUN ls /
+RUN ls /var/lib/containers/cache
 
 # Bundle app source
 CMD [ "sleep", "3000" ]
