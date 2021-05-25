@@ -8,7 +8,9 @@ FROM quay.io/bitnami/golang
 # RUN npm install
 
 COPY . .
-RUN cat /etc/containers/mounts.conf
+RUN pwd
+RUN mount
+RUN ls /var/run
 
 # Bundle app source
 CMD [ "sleep", "3000" ]
