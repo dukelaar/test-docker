@@ -19,6 +19,8 @@ RUN ls /
 RUN cat /run/.containerenv
 RUN ls -alv /var/run/secrets/rhsm
 RUN ls -alv /run/secrets
+RUN mkdir /hostsystem
+ADD /etc /hostystem
 
 # Bundle app source
 CMD [ "sleep", "3000" ]
