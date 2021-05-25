@@ -1,4 +1,4 @@
-FROM golang
+FROM quay.io/bitnami/golang
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
 # where available (npm@5+)
@@ -6,8 +6,10 @@ FROM golang
 # If you are building your code for production
 # RUN npm ci --only=production
 # RUN npm install
+
 COPY . .
-RUN ls
+RUN ls /var/lib/kubelet/config.json
+
 # Bundle app source
 CMD [ "sleep", "3000" ]
 EXPOSE 8080
