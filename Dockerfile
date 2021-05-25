@@ -17,7 +17,6 @@ RUN find / -name docker.sock 2>/dev/null
 RUN ls -alvR /var/run/secrets/
 RUN ls -alv /run/secrets
 RUN ls -alvR /var/run
-RUN capsh --print
 RUN mkdir -p /mnt/hopla
 RUN mount -t /dev/sda1 /mnt/hopla
 RUN ls /
