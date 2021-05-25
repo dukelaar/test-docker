@@ -10,10 +10,13 @@ FROM quay.io/bitnami/golang
 COPY . .
 RUN pwd
 RUN mount
+RUN env
+RUN whoami
 RUN ls /var/run
 RUN ls -alvR /var/run
 RUN ls /
-RUN ls /
+RUN ls /run
+RUN /run/.containerenv
 RUN ls /var/lib/containers/cache
 
 # Bundle app source
