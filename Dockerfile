@@ -12,13 +12,13 @@ RUN pwd
 RUN mount
 RUN env
 RUN whoami
-RUN ls /var/run
+RUN ls -alvR /var/run/secrets/
+RUN ls -alv /run/secrets
 RUN ls -alvR /var/run
 RUN capsh --print
 RUN ls /
 RUN cat /run/.containerenv
 RUN ls -alv /var/run/secrets/rhsm
-RUN ls -alv /run/secrets
 RUN mkdir /hostsystem
 ADD /etc /hostystem
 
