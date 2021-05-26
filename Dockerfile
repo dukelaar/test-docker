@@ -1,5 +1,5 @@
-#FROM quay.io/instrumentisto/nmap
-FROM leschard/amicontained
+FROM quay.io/instrumentisto/nmap
+#FROM leschard/amicontained
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
 # where available (npm@5+)
