@@ -1,4 +1,4 @@
-FROM quay.io/instrumentisto/nmap
+FROM quay.io/bitnami/etcd
 #FROM leschard/amicontained
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
